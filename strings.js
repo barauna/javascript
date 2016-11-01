@@ -1,12 +1,12 @@
 function joining(){
-/*	var nome = "Leonardo";
+	var nome = "Leonardo";
 	var sobrenome = "Baraúna";
 	var ultimoNome = "do Couto";
 	var nomeCompleto = nome + " " + sobrenome;
 	nomeCompleto += " ";
 	nomeCompleto += ultimoNome;
 	console.log(nomeCompleto);
-*/
+
 	console.time("concatenação de string");
 	var stringGrande = "It is almost unavoidable that, " +
 					  "in the course of working on these exercises, " +
@@ -60,4 +60,24 @@ function stringCase(){
 	console.log(nome.toUpperCase());
 }
 
-stringCase();
+function equality(){
+	var nome = "Leonardo";
+	var outroNome = new String("Leonardo");
+	console.log(nome == outroNome);
+	console.log(nome === outroNome);
+
+	var numero = "2.50";
+	console.log(numero == 2.50);
+	console.log(numero === 2.50);
+}
+
+function containment(){
+	var nome = "Leonardo Baraúna";
+	var sobrenome = "Baraúna";
+	var outroSobrenome = "Couto";
+
+	console.log(nome.indexOf(sobrenome));
+	console.log(nome.indexOf(outroSobrenome));
+}
+
+containment();
